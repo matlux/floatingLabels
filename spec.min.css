@@ -1,11 +1,5 @@
 
 
-
-.mdw-list__secondary[mdw-action] {
-    pointer-events: auto
-}
-
-
 .mdw-textfield {
     display: -ms-grid;
     display: grid;
@@ -98,68 +92,7 @@
     margin-bottom: 8px
 }
 
-textarea.mdw-textfield__input {
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    min-height: 1em;
-    min-width: 100%;
-    max-width: 100%;
-    margin-top: calc(12px + .75rem + .125em);
-    margin-bottom: 8px;
-    padding-right: 16px;
-    padding-left: 0
-}
-
-
-.mdw-textfield__icon[mdw-dropdown] {
-    pointer-events: none
-}
-
-.mdw-textfield__icon[mdw-dropdown]::after {
-    content: "";
-    width: 0;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    border-top: 5px solid currentColor;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent
-}
-
-.mdw-textfield__dropdown {
-    position: absolute;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-column-end: span 7;
-    -ms-grid-row: 2;
-    grid-row: 2;
-    overflow: hidden;
-    max-height: 0;
-    max-width: 100%;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 8px;
-    transition-duration: .2s;
-    transition-property: box-shadow,max-height;
-    transition-timing-function: cubic-bezier(.4,0,1,1);
-    z-index: 2;
-    box-shadow: none;
-    border-radius: 0 0 4px 4px
-}
-
-
 .mdw-textfield__label {
-    font-weight: 400;
-    letter-spacing: .009375rem;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%)
-}
-
-.mdw-textfield[mdw-value-empty] .mdw-textfield__label {
     font-weight: 400;
     letter-spacing: .009375rem;
     font-size: 1rem;
