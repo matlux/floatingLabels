@@ -1,0 +1,35 @@
+.mdw-textfield__input:-webkit-autofill~.mdw-textfield__border .mdw-textfield__label,.mdw-textfield__input:not(:placeholder-shown):not(:focus)~.mdw-textfield__border .mdw-textfield__label {
+    font-weight: 400;
+    letter-spacing: .025rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    top: 0;
+    transform: translateY(0)
+}
+
+.mdw-textfield[mdw-outlined] .mdw-textfield__input:-webkit-autofill~.mdw-textfield__border .mdw-textfield__label,.mdw-textfield[mdw-outlined] .mdw-textfield__input:not(:placeholder-shown):not(:focus)~.mdw-textfield__border .mdw-textfield__label {
+    transform: translateY(-50%)
+}
+
+.mdw-textfield__input:-webkit-autofill~.mdw-textfield__border .mdw-textfield__outline-gap::before,.mdw-textfield__input:not(:placeholder-shown):not(:focus)~.mdw-textfield__border .mdw-textfield__outline-gap::before,:root[dir=rtl] .mdw-textfield__input:-webkit-autofill~.mdw-textfield__border .mdw-textfield__outline-gap::after,:root[dir=rtl] .mdw-textfield__input:not(:placeholder-shown):not(:focus)~.mdw-textfield__border .mdw-textfield__outline-gap::after {
+    right: 100%;
+    left: 0
+}
+
+.mdw-textfield__input:-webkit-autofill~.mdw-textfield__border .mdw-textfield__outline-gap::after,.mdw-textfield__input:not(:placeholder-shown):not(:focus)~.mdw-textfield__border .mdw-textfield__outline-gap::after,:root[dir=rtl] .mdw-textfield__input:-webkit-autofill~.mdw-textfield__border .mdw-textfield__outline-gap::before,:root[dir=rtl] .mdw-textfield__input:not(:placeholder-shown):not(:focus)~.mdw-textfield__border .mdw-textfield__outline-gap::before {
+    right: 0;
+    left: 100%
+}
+
+
+.mdw-grid__item {
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-top: 24px;
+    padding-left: 24px;
+    transition-duration: .2s;
+    transition-property: flex,width,padding;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
